@@ -1,5 +1,27 @@
 import React from "react";
+<<<<<<< HEAD
 import ImageUpload from "./Script";
+=======
+function applySepiaFilter() {
+    var image = document.getElementById('image');
+    image.classList.add("sepia");
+}
+
+function applyBW() {
+    var image = document.getElementById('image');
+    image.classList.add("bw");
+}
+
+function applyCon() {
+    var image = document.getElementById('image');
+    image.classList.add("con");
+}
+
+function applySat() {
+    var image = document.getElementById('image');
+    image.classList.add("sat");
+}
+>>>>>>> 9ab4e225a906747200116d696dcf210f2c37c122
 
 const PhotoShop = () => {
     return (
@@ -21,10 +43,14 @@ const PhotoShop = () => {
             <main>
                 <div className="cover">
                     <div className="photoEditor">
+<<<<<<< HEAD
                         {/* <img src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg" alt="" />
                         <input type="file" id="fileInput" accept="image/*" ></input>
                         <button onclick="uploadImage()">Upload Image</button> */}
                         <ImageUpload />
+=======
+                        <img id = "image" src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg" alt="" />
+>>>>>>> 9ab4e225a906747200116d696dcf210f2c37c122
                         <div className="photoUtils">
                             <button>+ upload picture</button>
                             <button>save to album!</button>
@@ -34,10 +60,10 @@ const PhotoShop = () => {
                         <p className="largeFont">time machine</p>
                         <p id="slogan">travel back in time!</p>
                         <div className="filterOptions">
-                            <button class="filters">1800s (b&w)</button>
-                            <button class="filters">1950s (sepia)</button>
-                            <button class="filters">1980s (XXX)</button>
-                            <button class="filters">2000s (XXX)</button>
+                            <button onClick={applyBW} class="filter1">1800s (b&w)</button>
+                            <button onClick={applySepiaFilter} class="filter2">1950s (sepia)</button>
+                            <button onClick={applyCon} class="filter3">1980s (contrast)</button>
+                            <button onClick={applySat} class="filter4">2000s (saturation)</button>
                         </div>
                     </div>
                     
@@ -52,5 +78,6 @@ const PhotoShop = () => {
         </div>
     )
 }
+<script src="index.js"></script>
 
 export default PhotoShop;
