@@ -1,4 +1,5 @@
 import React from "react";
+import ImageUpload from "./Script";
 
 const PhotoShop = () => {
     return (
@@ -20,7 +21,10 @@ const PhotoShop = () => {
             <main>
                 <div className="cover">
                     <div className="photoEditor">
-                        <img src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg" alt="" />
+                        {/* <img src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg" alt="" />
+                        <input type="file" id="fileInput" accept="image/*" ></input>
+                        <button onclick="uploadImage()">Upload Image</button> */}
+                        <ImageUpload />
                         <div className="photoUtils">
                             <button>+ upload picture</button>
                             <button>save to album!</button>
