@@ -1,0 +1,226 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #eae2ce;
+
+}
+@font-face {
+  font-family: youngest;
+  src: url(the-youngest-script.ttf);
+}
+
+@font-face {
+  font-family: spacemono;
+  src: url(SpaceMono-Italic.ttf);
+}
+
+@font-face {
+  font-family: inter;
+  src: url(Inter-Regular.ttf);
+}
+
+@font-face {
+  font-family: archivo;
+  src: url(ArchivoBlack-Regular.ttf);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* HEADER SECTION */
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 50px;
+  position: sticky;
+  top: 0;
+  background: #d6bba6;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-family: inter;
+
+}
+
+#title{
+  font-size: 30px;
+  font-family: theyoungest
+}
+
+nav ul{
+  display: flex;
+  margin-right: 250px;
+}
+
+nav ul li{
+  list-style: none;
+  margin: 0px 15px;
+}
+
+nav ul li a{
+  padding: 8px 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-family: inter;
+}
+
+nav ul li a:hover{
+  font-family: archivo;
+
+}
+
+.userUtils{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.userUtils i{
+  margin: 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  padding: 9px 10px;
+  transform: scale(1.1);
+}
+
+.userUtils i:hover{
+  background-color: rgb(230, 230, 230);
+  color: black;
+}
+
+/* CONTENT SECTION */
+
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 20px 400px;
+}
+
+
+
+.elaboration{
+  font-size: 20px;
+  margin: 30px 80px;
+  color: rgb(107, 107, 107);
+}
+
+#slogan{
+  font-size: 20px;
+  margin-top: 0;
+  text-align: center;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  font-family: spacemono
+}
+
+/* COVER SECTION */
+
+.cover{
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+  top: 50%;
+  transform: translateY(25%);
+  position: relative;
+}
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.cover .photoEditor img{
+  width: 45em;
+}
+
+/* PHOTO EDITOR SECTION */
+
+.photoEditor{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photoEditor img{
+  border: 5px solid rgb(146, 148, 160);
+}
+
+.photoUtils button{
+  margin: 0px 20px;
+  margin-top: 25px;
+  padding: 7px 50px;
+  border-radius: 5px;
+  font-size: 17px;
+  border: 1px solid black;
+  background-color: rgb(224, 224, 224);
+  font-size: 17px;
+  font-family: inter;
+  background-color: #f2eddb;}
+.photoUtils button:hover{
+  background-color: #d6bba6;
+  color: white;
+  cursor: pointer;
+  font-family: archivo;
+
+}
+/* FILTER OPTIONS */
+
+#chooseFilter{
+  font-size: 26px;
+}
+
+.filterSpace{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.largeFont{
+  font-size: 60px;
+  font-weight: 500;
+  margin: 0;
+  font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif
+}
+.filterOptions{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.filters{
+  padding: 7px 50px;
+  margin: 40px 50px;
+  border-radius: 5px;
+  border: 1px solid black;
+  background-color: rgb(224, 224, 224);
+  font-size: 17px;
+  font-family: inter;
+  background-color: #f2eddb;
+
+}
+
+.filters:hover{
+  background-color: #d6bba6;
+  color: white;
+  cursor: pointer;
+  font-family: archivo;
+
+}
