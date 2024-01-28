@@ -1,7 +1,5 @@
 import React from "react";
-<<<<<<< HEAD
 import ImageUpload from "./Script";
-=======
 function applySepiaFilter() {
     var image = document.getElementById('image');
     image.classList.add("sepia");
@@ -21,7 +19,6 @@ function applySat() {
     var image = document.getElementById('image');
     image.classList.add("sat");
 }
->>>>>>> 9ab4e225a906747200116d696dcf210f2c37c122
 
 const PhotoShop = () => {
     return (
@@ -30,12 +27,7 @@ const PhotoShop = () => {
             <div className="header">
                 <nav>
                     <ul>
-                        <li>
-                            <a href="">photobooth!</a>
-                        </li>
-                        <li>
-                            <a href="">album!</a>
-                        </li>
+  
                     </ul>
                 </nav>
             </div>
@@ -43,17 +35,12 @@ const PhotoShop = () => {
             <main>
                 <div className="cover">
                     <div className="photoEditor">
-<<<<<<< HEAD
                         {/* <img src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg" alt="" />
                         <input type="file" id="fileInput" accept="image/*" ></input>
                         <button onclick="uploadImage()">Upload Image</button> */}
                         <ImageUpload />
-=======
-                        <img id = "image" src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg" alt="" />
->>>>>>> 9ab4e225a906747200116d696dcf210f2c37c122
                         <div className="photoUtils">
                             <button>+ upload picture</button>
-                            <button>save to album!</button>
                         </div>
                     </div>
                     <div className="filterSpace">
